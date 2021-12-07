@@ -1,0 +1,11 @@
+// npm install -g create-react-app
+// create-react-app client
+
+-->
+
+npx create-react-app client
+
+rm -r .git
+ 
+
+ docker-compose down && docker-compose up
