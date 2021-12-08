@@ -6,6 +6,33 @@
 npx create-react-app client
 
 rm -r .git
- 
+
+git status
+git add .
+git commit -m "some reason"
+git push origin master
+        Username: alex-x-st
+        Password: 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
+
+git "complex" (12/7/21)
+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
+
 
  docker-compose down && docker-compose up
+
+
+ In the client/nginx/default.conf file, please add the following line to the end of the location directive:
+
+    try_files $uri $uri/ /index.html;
+
+The default.conf should now look like this:
+
+server {
+  listen 3000;
+ 
+  location / {
+    root /usr/share/nginx/html;
+    index index.html index.htm;
+    try_files $uri $uri/ /index.html;
+  }
+}
